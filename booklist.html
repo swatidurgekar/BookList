@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+    
+    
+      <title>CodePen - JavaScript BookList App</title>
+      
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+      
+    
+      <script>
+      window.console = window.console || function(t) {};
+    </script>
+    
+      
+      
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    
+    
+    
+  </head>
+
+<body>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span class=
+        "text-primary">Book</span>List</h1>
+        <form id="book-form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="form-control">
+          </div>
+          <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN#</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+    </div>
+  
+    
+  <script src=booklist.js></script>
+    <!--<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-22237a8d-c5f7-a4ca-c8ef-c923de913519" crossorigin=""></script>
+  
+  
+  
+    </body>
+</body>
+</html>
